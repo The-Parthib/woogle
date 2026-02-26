@@ -43,12 +43,12 @@ export default function LandingScreen({ onGetStarted }) {
       </div>
 
       {/* Footer */}
-      <p className="absolute bottom-6 left-0 right-0 text-center text-slate-400 text-sm px-4">
+      <p className="absolute bottom-10 left-0 right-0 text-center text-slate-400 text-sm px-4">
         Privacy • Your files are processed locally • Nothing is uploaded to any
         server.
       </p>
-      <p className="absolute bottom-6 left-0 right-0 text-center text-slate-400 text-sm px-4 pt-2">
-        Made with ❤️ by <a href="parthibpanja.netlify.app" className="underline">Parthib</a>.
+      <p className="absolute bottom-4 left-0 right-0 text-center text-slate-400 text-sm px-4 pt-2">
+        Made with ❤️ by Parthib.
       </p>
     </div>
   );
