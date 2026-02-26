@@ -1,0 +1,19 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="woogleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366"/>
+      <stop offset="100%" stop-color="#128C7E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chat Bubble -->
+  <path 
+    d="M128 20C65 20 20 63 20 118c0 27 11 51 29 69l-9 38 39-12c16 8 34 12 49 12 63 0 108-43 108-98S191 20 128 20z"
+    fill="url(#woogleGradient)"
+  />
+
+  <!-- Message Dots -->
+  <circle cx="95" cy="115" r="10" fill="white"/>
+  <circle cx="128" cy="115" r="10" fill="white"/>
+  <circle cx="161" cy="115" r="10" fill="white"/>
+</svg>
