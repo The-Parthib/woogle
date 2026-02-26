@@ -110,12 +110,15 @@ export default function ChatScreen({ chatData, onBack }) {
     setShowDatePicker(false);
     setIsJumping(true);
 
-    // Chat stays mounted — scroll the container directly, then hide overlay
     setTimeout(() => {
       const targetEl = dateRefs.current[date];
       const containerEl = chatContainerRef.current;
       if (targetEl && containerEl) {
-        containerEl.scrollTop = targetEl.offsetTop - containerEl.offsetTop;
+        // getBoundingClientRect is relative to the viewport and works
+        // regardless of offsetParent chain — avoids the header-height offset bug.
+        const containerTop = containerEl.getBoundingClientRect().top;
+        const targetTop = targetEl.getBoundingClientRect().top;
+        containerEl.scrollTop += targetTop - containerTop;
       }
       setIsJumping(false);
     }, 320);
